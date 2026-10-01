@@ -1,0 +1,63 @@
+#
+# URAUOLP Project Metadata Configuration
+# MIT License
+# Copyright © 2026 URAUOLP Open-Source Project
+# Non-Profit Public Welfare Initiative
+#
+
+# ========== Project Basic Info ==========
+project:
+  name: "URAUOLP"
+  full_name: "URAUOLP Open-Source Project"
+  description: >
+    A non-profit public welfare open-source initiative.
+    Focus on cross-platform lightweight core libraries & web landing systems.
+  license: "MIT"
+  copyright_year: 2026
+  maintainer: "URAUOLP Team"
+  homepage: "https://urauolp.org"
+  repository: "https://github.com/urauolp/urauolp"
+
+# ========== Build Configuration ==========
+build:
+  standard: "C++17"
+  targets:
+    - debug
+    - release
+  platforms:
+    - windows
+    - linux
+    - macos
+    - web
+  warnings:
+    enable: true
+    strict: true
+  optimization:
+    debug: false
+    release: true
+
+# ========== Source & Include Paths ==========
+paths:
+  root: "./"
+  include: "docs/public/include"
+  source: "src"
+  docs: "docs"
+  tests: "tests"
+  assets: "assets"
+
+# ========== Legal & Open Source Declaration ==========
+legal:
+  type: "Non-Profit Public Welfare"
+  license_file: "LICENSE"
+  attribution_required: true
+  commercial_restriction: >
+    This project follows MIT license.
+    Although MIT permits commercial usage, this project is originally non-profit public welfare.
+  contact: "team@urauolp.org"
+
+# ========== Testing Framework ==========
+test:
+  enabled: true
+  runner: "internal tiny test framework"
+  benchmark: true
+  output_format: "plain"
